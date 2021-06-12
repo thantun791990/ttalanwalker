@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+    <style>
+        .transbox {
+            margin: 10px;
+            background-color:#22333d80;
+
+        }
+        .background {
+            background-image:url(assets/alanwalker.jpg);color: gold;
+        
+        }
+
+    </style>
+    
+    
+    <link rel="stylesheet" href="alanstyle.css">
+
+</head>
+<body class="background">
+    <h1 class="alanhead"><img src="assets/icon/alanwalker.jpg" width="45px" height="45px" alt="AlanWalker logo" style="vertical-align:bottom;" >
+        <a href="index.html" style="text-decoration: none;" target=""><strong>Alan Walker</strong></a></img></h1>
+
+      
+    <div class="transbox">
+        
+    <fieldset>
+        <legend><h3>စာရင်းသွင်းဖောင်</h3></legend>        
+        <form action="#" method="POST">
+          <div> <label for="fname">နာမည် :</label><br>
+            <input type="text" name="fname" placeholder="First Name" autofocus id="fname">
+            <input type="text" name="lname" placeholder="Last Name" id="">
+            </div>  
+            <br>
+           <div>
+            <label for="email">အီးမေးလ် :</label><br>
+            <input type="email" name="email" id="email">
+           </div>
+           <br>
+        <div>
+            <label for="tel">တယ်လီဖုန်း :</label><br>
+            <input type="tel" name="tele" id="tel" style="font-style:italic;" placeholder="သုည ဖြုတ်၍ရိုက်ပါရန်။" pattern="[0-9]{10}">
+            <small>e.g 9450123456</small><br><br>
+            <label for="tel">Your Old MPT Number :</label><br>
+            <input type="tel" name="tele" id="tel2" style="font-style: italic;" placeholder="သုည ဖြုတ်၍ရိုက်ပါရန်။" pattern="[0-9]{8}">
+            <small>e.g 95123456</small>
+
+        </div><br>
+         
+        <div>
+            <label for="password">Password :</label><br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="cpassword" id="" placeholder="Confirm Password">
+
+        </div><br>
+        <div>
+            <label for="address">လိပ်စာ :</label><br>
+            <textarea name="Address" id="address" cols="100" rows="2" placeholder="အမှတ် (၁) ဘုရားလမ်း သာကေတမြို့နယ်"></textarea>
+        </div><br>
+     
+        <div>
+            <label for="dob">Date Of Birth :</label><br>
+            <input type="date" name="dob" id="dob">
+
+        </div><br>
+
+        <div>
+            <label for="age">Age :</label><br>
+            <input type="number" name="" id="age" min="18" placeholder="အသက်">
+
+        </div><br>
+      
+        <div>
+            <label for="radio"> Gender :</label><br>
+            <label for="male"> ကျား :</label>
+            <input type="radio" name="male" value="ကျား" id="male" >
+            <label for="female"> မ :</label>
+            <input type="radio" name="male" value="မ" id="female">
+            <label for="other"> အခြား :</label>
+            <input type="radio" name="male" value="အခြား" id="other">
+           
+
+        </div><br>
+        <div>
+            <label for="profile">Your Photo :</label><br>
+            <input type="file" name="Photo" id="profile"><br>
+        </div><br>
+        <div>
+            <input type="checkbox" name="Acheckbox" id="agree" required>
+            <label for="agree"> အထက်ပါ အချက်အလက်များ မှန်ကန်စွာဖြည့်စွက်ထားပါသည်ဟု သက်သေပြုပါသည်။</label><br>
+            <input type="checkbox" name="Acheckbox" id="agree2" required>
+            <label for="agree2"> အချက်အလက်များ လွဲမှားစွာဖြည့်စွက်ပါက သင့်၏တာဝန်သာ ဖြစ်သည်။</label><br>
+            <input type="checkbox" name="Acheckbox" id="agree3" required>
+            <label for="agree3"> အသက် ၁၈ နှစ်အထက် ဖြစ်ပါသည်။</label><br><br>
+            
+
+        </div>
+
+        <div>
+            <input type="button" onclick="alert ('Thank You for Register')" value="Buttom &hookleftarrow;"> &nbsp;
+            &nbsp;
+            <input type="submit" value="&hookrightarrow;Submit "> &nbsp;&nbsp;
+            <button> Register button &hearts;</button> &nbsp;&nbsp;
+            <input type="reset" value="Reset &UpArrow;">
+        </div>
+    
+
+
+
+        </form>
+</body>
+</html>
